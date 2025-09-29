@@ -1,0 +1,166 @@
+[
+  {
+    "migrationResults": {
+      "status": "pass",
+      "message": ""
+    },
+    "sitecoreId": 101,
+    "galleryItemName": "Modern Living Room",
+    "galleryTitle": "Spacious Living Room",
+    "galleryDescription": "A modern living room with natural lighting.",
+    "isPublished": true,
+    "relatedFloorplans": [
+      {
+        "sfId": 201,
+        "name": "Open Concept Floorplan",
+        "contentHubEntityIdentifier": "F201",
+        "communitySheetSfId": 301
+      }
+    ],
+    "relatedLots": [
+      {
+        "sfId": 401,
+        "address1": "123 Palm Street",
+        "contentHubEntityIdentifier": "L401",
+        "floorPlanSfId": 201
+      }
+    ],
+    "relatedCommunitySheets": [
+      {
+        "sfId": 501,
+        "name": "Palm Grove Community",
+        "contentHubEntityIdentifier": "C501"
+      }
+    ],
+    "relatedMetroAreas": [
+      {
+        "sfId": 601,
+        "name": "Orlando",
+        "contentHubEntityIdentifier": "M601"
+      }
+    ],
+    "isFeaturedGallery": false,
+    "slides": [
+      {
+        "slideTitle": "Main Hall",
+        "slideCaption": "Bright and spacious design.",
+        "slideImage": "<image width='1600' height='1200' alt='001_73713322' src='https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/45d51271b09a4f79ae435272a43c631f?v=6601ba97' stylelabs-content-id='4356071' stylelabs-content-type='Image' thumbnailsrc='https://mhc-p-001.sitecorecontenthub.cloud/api/gateway/4356071/thumbnail' media-id='{E6D6A253-5B21-4EF1-8A06-74047B115592}' sitecore-path='Automated Batch Image Uploader/Plan Images/' />",
+        "useContentHubImage": true,
+        "contentHubImageUrl": "https://cdn.images.com/hall.jpg",
+        "slideIndex": 1
+      }
+    ]
+  },
+  {
+    "migrationResults": {
+      "status": "fail",
+      "message": "Image not found"
+    },
+    "sitecoreId": 102,
+    "galleryItemName": "Luxury Kitchen",
+    "galleryTitle": "Gourmet Kitchen",
+    "galleryDescription": "A chef’s dream kitchen with island and appliances.",
+    "isPublished": false,
+    "relatedFloorplans": [
+      {
+        "sfId": 202,
+        "name": "Luxury Kitchen Plan",
+        "contentHubEntityIdentifier": "F202",
+        "communitySheetSfId": 302
+      }
+    ],
+    "relatedLots": [
+      {
+        "sfId": 402,
+        "address1": "45 Lakeview Drive",
+        "contentHubEntityIdentifier": "L402",
+        "floorPlanSfId": 202
+      }
+    ],
+    "relatedCommunitySheets": [
+      {
+        "sfId": 502,
+        "name": "Lakeview Estates",
+        "contentHubEntityIdentifier": "C502"
+      }
+    ],
+    "relatedMetroAreas": [
+      {
+        "sfId": 602,
+        "name": "Miami",
+        "contentHubEntityIdentifier": "M602"
+      }
+    ],
+    "isFeaturedGallery": true,
+    "slides": [
+      {
+        "slideTitle": "Island View",
+        "slideCaption": "Granite counters with seating.",
+        "slideImage": "<image src='link2.jpg' contenthub-id='222222'>",
+        "useContentHubImage": false,
+        "contentHubImageUrl": "",
+        "slideIndex": 1
+      }
+    ]
+  },
+  {
+    "migrationResults": {
+      "status": "pass",
+      "message": "Imported successfully"
+    },
+    "sitecoreId": 103,
+    "galleryItemName": "Outdoor Patio",
+    "galleryTitle": "Relaxing Patio",
+    "galleryDescription": "Perfect outdoor space for gatherings.",
+    "isPublished": true,
+    "relatedFloorplans": [
+      {
+        "sfId": 203,
+        "name": "Outdoor Living Plan",
+        "contentHubEntityIdentifier": "F203",
+        "communitySheetSfId": 303
+      }
+    ],
+    "relatedLots": [
+      {
+        "sfId": 403,
+        "address1": "78 Sunset Boulevard",
+        "contentHubEntityIdentifier": "L403",
+        "floorPlanSfId": 203
+      }
+    ],
+    "relatedCommunitySheets": [
+      {
+        "sfId": 503,
+        "name": "Sunset Villas",
+        "contentHubEntityIdentifier": "C503"
+      }
+    ],
+    "relatedMetroAreas": [
+      {
+        "sfId": 603,
+        "name": "Tampa",
+        "contentHubEntityIdentifier": "M603"
+      }
+    ],
+    "isFeaturedGallery": false,
+    "slides": [
+      {
+        "slideTitle": "Patio Seating",
+        "slideCaption": "Cozy furniture with garden view.",
+        "slideImage": "<image src='link3.jpg' contenthub-id='333333'>",
+        "useContentHubImage": true,
+        "contentHubImageUrl": "https://cdn.images.com/patio.jpg",
+        "slideIndex": 1
+      },
+      {
+        "slideTitle": "Evening View",
+        "slideCaption": "Patio with sunset backdrop.",
+        "slideImage": "<image src='link4.jpg' contenthub-id='444444'>",
+        "useContentHubImage": true,
+        "contentHubImageUrl": "https://cdn.images.com/sunset.jpg",
+        "slideIndex": 2
+      }
+    ]
+  }
+]

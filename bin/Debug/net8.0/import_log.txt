@@ -1,0 +1,67 @@
+=== Import Run 9/26/2025 11:29:36 AM ===
+Created: 0, Failed: 0, Duplicates: 0
+========================================
+=== Import Run 9/26/2025 11:37:11 AM ===
+Created: 0, Failed: 0, Duplicates: 0
+========================================
+=== Import Run 9/26/2025 11:39:48 AM ===
+Created: 0, Failed: 0, Duplicates: 0
+========================================
+=== Import Run 9/26/2025 11:40:54 AM ===
+Created: 0, Failed: 0, Duplicates: 0
+========================================
+=== Import Run 9/26/2025 11:42:33 AM ===
+Created: 0, Failed: 0, Duplicates: 0
+========================================
+=== Import Run 9/26/2025 11:47:08 AM ===
+Created: 0, Failed: 0, Duplicates: 0
+123 | Tampa-Community Sheet name-Floorplan name-Lot address1 | Simulated | Dry run - no Content Hub API call
+========================================
+=== Import Run 9/26/2025 12:33:34 PM ===
+Created: 0, Failed: 0, Duplicates: 0
+101 | Orlando-Palm Grove Community-Open Concept Floorplan-123 Palm Street | Simulated | Dry run - no Content Hub API call
+102 | Miami-Lakeview Estates-Luxury Kitchen Plan-45 Lakeview Drive | Simulated | Dry run - no Content Hub API call
+103 | Tampa-Sunset Villas-Outdoor Living Plan-78 Sunset Boulevard | Simulated | Dry run - no Content Hub API call
+========================================
+=== Import Run 9/26/2025 4:10:01 PM ===
+Created: 0, Failed: 0, Duplicates: 0
+101 | Orlando-Palm Grove Community-Open Concept Floorplan-123 Palm Street | Simulated | Dry run - no Content Hub API call
+102 | Miami-Lakeview Estates-Luxury Kitchen Plan-45 Lakeview Drive | Simulated | Dry run - no Content Hub API call
+103 | Tampa-Sunset Villas-Outdoor Living Plan-78 Sunset Boulevard | Simulated | Dry run - no Content Hub API call
+========================================
+=== Import Run 9/26/2025 4:11:10 PM ===
+Created: 0, Failed: 0, Duplicates: 0
+101 | Orlando-Palm Grove Community-Open Concept Floorplan-123 Palm Street | Simulated | Dry run - no Content Hub API call
+102 | Miami-Lakeview Estates-Luxury Kitchen Plan-45 Lakeview Drive | Simulated | Dry run - no Content Hub API call
+103 | Tampa-Sunset Villas-Outdoor Living Plan-78 Sunset Boulevard | Simulated | Dry run - no Content Hub API call
+========================================
+=== Import Run 9/26/2025 4:13:28 PM ===
+Created: 0, Failed: 0, Duplicates: 0
+101 | Orlando-Palm Grove Community-Open Concept Floorplan-123 Palm Street | Simulated | Dry run - no Content Hub API call
+102 | Miami-Lakeview Estates-Luxury Kitchen Plan-45 Lakeview Drive | Simulated | Dry run - no Content Hub API call
+103 | Tampa-Sunset Villas-Outdoor Living Plan-78 Sunset Boulevard | Simulated | Dry run - no Content Hub API call
+========================================
+=== Import Run 9/26/2025 4:14:37 PM ===
+Created: 0, Failed: 0, Duplicates: 0
+101 | Orlando-Palm Grove Community-Open Concept Floorplan-123 Palm Street | Simulated | Dry run - no Content Hub API call
+102 | Miami-Lakeview Estates-Luxury Kitchen Plan-45 Lakeview Drive | Simulated | Dry run - no Content Hub API call
+103 | Tampa-Sunset Villas-Outdoor Living Plan-78 Sunset Boulevard | Simulated | Dry run - no Content Hub API call
+========================================
+=== Import Run 9/26/2025 4:25:07 PM ===
+Created: 0, Failed: 0, Duplicates: 0
+101 | Modern Living Room |  | 
+102 | Luxury Kitchen |  | 
+103 | Outdoor Patio |  | 
+========================================
+=== Import Run 9/26/2025 4:27:33 PM ===
+Created: 0, Failed: 0, Duplicates: 0
+101 | Modern Living Room |  | 
+102 | Luxury Kitchen |  | 
+103 | Outdoor Patio |  | 
+========================================
+=== Import Run 9/29/2025 2:27:00 PM ===
+Created: 0, Failed: 0, Duplicates: 0
+101 | Modern Living Room |  | 
+102 | Luxury Kitchen |  | 
+103 | Outdoor Patio |  | 
+========================================
