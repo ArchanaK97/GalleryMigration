@@ -1,4 +1,8 @@
 ﻿using GalleryImporter.Models;
+using Microsoft.Extensions.Logging.Abstractions;
+using Stylelabs.M.Base.Querying;
+using Stylelabs.M.Framework.Essentials.LoadConfigurations;
+using Stylelabs.M.Framework.Essentials.LoadOptions;
 using Stylelabs.M.Sdk.Contracts.Base;
 using Stylelabs.M.Sdk.WebClient;
 using static Stylelabs.M.Sdk.Defaults;
@@ -18,10 +22,8 @@ namespace GalleryImporter.Services
 
         public async Task<List<ImportResult>> ImportAsync(List<GalleryItem> items)
         {
-            long idd = 7599739;
             var results = new List<ImportResult>();
             var definition = await _mClient.EntityDefinitions.GetAsync("MH.AssetGallery");
-            var getentity = await _mClient.Entities.GetAsync(idd);
             Console.WriteLine($"Definition: {definition.Name}");
             foreach (var member in definition.MemberGroups)
             {
@@ -29,29 +31,19 @@ namespace GalleryImporter.Services
             }
             var entity = await _mClient.EntityFactory.CreateAsync("MH.AssetGallery");
             entity.SetPropertyValue("Title","TestGalleryMigration");
-           // entity.SetPropertyValue("MetroAreaIDs", "a1Icw00000088ejEAA");
-            entity.SetPropertyValue("MetroAreaIDs", "a1IC0000002KG0SMAW");
-     
-             var savedEntity = await _mClient.Entities.SaveAsync(entity);
 
-            //foreach (var item in items)
-            //{
-            //    // Create a new Gallery entity
-            //    var entity = await _mClient.EntityFactory.CreateAsync("MH.AssetGallery");
+            var metroArea = await _mClient.Entities.GetAsync("ux8xh4j1pUGBz8Iw6TNTpw", new EntityLoadConfiguration
+            {
+                RelationLoadOption = RelationLoadOption.All
+            });
 
-            //    // Set properties (adjust to your schema)
-            //    entity.SetPropertyValue("Title", item.galleryItemName);
-            //    //entity.SetPropertyValue("SitecoreId", item.sitecoreId);
+            var galleriesToMetroAreas = entity.GetRelation< IChildToManyParentsRelation>("GalleriesToMetroAreas");
+            if (metroArea?.Id != null)
+            {
+                galleriesToMetroAreas.Add(metroArea.Id.Value);
+            }
 
-            //    // Save to Content Hub
-            //   // var savedEntity = await _mClient.Entities.SaveAsync(entity);
-
-            //    results.Add(new ImportResult
-            //    {
-            //        SitecoreId = item.sitecoreId,
-            //        Name = item.galleryItemName
-            //    });
-            //}
+            var savedEntity = await _mClient.Entities.SaveAsync(entity);
 
             return results;
         }
