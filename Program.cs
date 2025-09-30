@@ -7,7 +7,7 @@ class Program
 {
     static async Task Main(string[] args)
     {
-        var inputFolder = "Input"; // put gallery.json files here
+        var inputFolder = "..\\..\\..\\Input"; // put gallery.json files here
         var logFile = "import_log.txt";
         var apiUrl = "";
         var token = "";
