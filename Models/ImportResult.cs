@@ -8,7 +8,7 @@ namespace GalleryImporter.Models
 {
     public class ImportResult
     {
-        public int SitecoreId { get; set; }
+        public string SitecoreId { get; set; }
         public string Name { get; set; }
         public string Status { get; set; } // Created, Failed, Duplicate, Simulated
         public string Message { get; set; }

@@ -8,7 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Services\Mapper.cs" />
+    <Compile Remove="Models\Test.cs" />
+    <Compile Remove="Services\ContentHubGalleryService.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,6 +17,7 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.9" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
     <PackageReference Include="RestSharp" Version="112.1.0" />
+    <PackageReference Include="Stylelabs.M.Sdk.WebClient" Version="4.2.62" />
   </ItemGroup>
 
 </Project>
