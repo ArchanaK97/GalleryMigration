@@ -1,0 +1,48 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+*.obj
+*.exe
+*.dll
+*.pdb
+*.suo
+*.user
+*.ncb
+*.aps
+*.bsc
+*.sbr
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.lib
+*.log
+*.res
+*.pch
+*.idb
+*.opt
+*.ipch
+
+# Visual Studio files
+.vs/
+*.sln.docstates
+*.vsproj.user
+*.vsprops
+*.vssscc
+*.buildscc
+
+# Package files
+packages/
+*.nupkg
+
+# Temporary files
+temp/
