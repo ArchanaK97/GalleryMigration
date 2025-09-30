@@ -27,7 +27,8 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.sitecore.com/resources/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -66,6 +67,10 @@
             "RestSharp": {
               "target": "Package",
               "version": "[112.1.0, )"
+            },
+            "Stylelabs.M.Sdk.WebClient": {
+              "target": "Package",
+              "version": "[4.2.62, )"
             }
           },
           "imports": [

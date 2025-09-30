@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GalleryImporter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be7ff7d3d02c26f8dd543cd812d8048d63ed9e30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f890c287630d88ae4a6bc9f6030ea156d1cea45")]
 [assembly: System.Reflection.AssemblyProductAttribute("GalleryImporter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GalleryImporter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
