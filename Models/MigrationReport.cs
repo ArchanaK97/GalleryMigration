@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GalleryImporter.Models
+﻿namespace GalleryImporter.Models
 {
     public class MigrationReport
     {
@@ -12,17 +6,17 @@ namespace GalleryImporter.Models
         public int Created { get; set; }
         public int Failed { get; set; }
         public int Duplicates { get; set; }
-        public List<ItemReport> Items { get; set; } = new();
+        public List<ItemReport> Items { get; set; } = new List<ItemReport>();
     }
 
     public class ItemReport
     {
-        public string FileName { get; set; }
-        public string Name { get; set; }
+        public string FileName { get; set; } = String.Empty;
+        public string Name { get; set; } = String.Empty;
         public int SitecoreId { get; set; }
-        public string Status { get; set; } // "Created", "Failed", "Duplicate"
-        public string Message { get; set; }
+        public string Status { get; set; } = String.Empty; // "Created", "Failed", "Duplicate"
+        public string Message { get; set; } = String.Empty;
         public int? HttpStatusCode { get; set; }
-        public string ResponseContent { get; set; }
+        public string ResponseContent { get; set; } = String.Empty;
     }
 }
