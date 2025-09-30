@@ -1,16 +1,11 @@
-﻿using GalleryImporter.Models;
-using Microsoft.Extensions.Logging.Abstractions;
-using Stylelabs.M.Base.Querying;
-using Stylelabs.M.Framework.Essentials.LoadConfigurations;
-using Stylelabs.M.Framework.Essentials.LoadOptions;
-using Stylelabs.M.Sdk.Contracts.Base;
-using Stylelabs.M.Sdk.WebClient;
-using static Stylelabs.M.Sdk.Defaults;
-using static Stylelabs.M.Sdk.Errors;
-
-
-namespace GalleryImporter.Services
+﻿namespace GalleryImporter.Services
 {
+    using GalleryImporter.Models;
+    using Stylelabs.M.Framework.Essentials.LoadConfigurations;
+    using Stylelabs.M.Framework.Essentials.LoadOptions;
+    using Stylelabs.M.Sdk.Contracts.Base;
+    using Stylelabs.M.Sdk.WebClient;
+
     public class ContentHubService
     {
         private readonly IWebMClient _mClient;
