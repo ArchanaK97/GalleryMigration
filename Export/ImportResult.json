@@ -1,0 +1,266 @@
+[
+  {
+    "migrationResults": {
+      "status": "Pass",
+      "message": "Entity created successfully!"
+    },
+    "relatedLots": [],
+    "isPublished": true,
+    "galleryTitle": "COA_Cypress Ridge_Carolina_Fresh_555 Cypress Preserve",
+    "slides": [
+      {
+        "contentHubImageUrl": "https://mhc-q-002.sitecorecontenthub.cloud/api/public/content/1d6a791505af47c08e3c3709f14c088f?v=457afaae",
+        "slideIndex": "",
+        "useContentHubImage": true,
+        "slideCaption": "Step inside this test hallway.",
+        "slideTitle": "Step inside this test hallway Title.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/c850b6d611484bdba1247df8ac6c6c37?v=5c4b44e1",
+        "slideIndex": "1",
+        "useContentHubImage": true,
+        "slideCaption": "The kitchen overlooks the dining area and great room.",
+        "slideTitle": "The kitchen overlooks the dining area and great room.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/2e278a7700354a84aa87ce67f296740a?v=d2ea0ce6",
+        "slideIndex": "2",
+        "useContentHubImage": true,
+        "slideCaption": "The open-concept living space is accentuated with plenty of natural light.",
+        "slideTitle": "The open-concept living space is accentuated with plenty of natural light.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/9e70bbfda93f47e9805022cec8fd3357?v=f578bdd2",
+        "slideIndex": "3",
+        "useContentHubImage": true,
+        "slideCaption": "Enjoy family nights in the spacious great room.",
+        "slideTitle": "Enjoy family nights in the spacious great room.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/c355bb69e7f24d98ba61d7714ea55a88?v=e2f192d0",
+        "slideIndex": "4",
+        "useContentHubImage": true,
+        "slideCaption": "Enjoy family nights in the spacious great room.",
+        "slideTitle": "Enjoy family nights in the spacious great room.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/9faf4d2a520a45c59fb72311b66cb874?v=2d8a81ee",
+        "slideIndex": "5",
+        "useContentHubImage": true,
+        "slideCaption": "Entertaining has never been easier with this open floorplan.",
+        "slideTitle": "Entertaining has never been easier with this open floorplan.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/60ef531a764f46a4bc10b6a45b3cbb8e?v=031291f6",
+        "slideIndex": "6",
+        "useContentHubImage": true,
+        "slideCaption": "Enjoy preparing meals in this open kitchen with large work island.",
+        "slideTitle": "Enjoy preparing meals in this open kitchen with large work island.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/27859774c6fc4e479e3377cf42b2a1e4?v=dd105eca",
+        "slideIndex": "7",
+        "useContentHubImage": true,
+        "slideCaption": "Enjoy preparing meals in this open kitchen with large work island.",
+        "slideTitle": "Enjoy preparing meals in this open kitchen with large work island.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/cc76338f5cc74b3788b90af7ba57c2a9?v=b59a4692",
+        "slideIndex": "8",
+        "useContentHubImage": true,
+        "slideCaption": "The well-appointed kitchen features plenty of counter space to make meal prep a breeze.",
+        "slideTitle": "The well-appointed kitchen features plenty of counter space to make meal prep a breeze.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/3899d3d9e3e04ec4bdb9d14c3f858129?v=0d55ddd0",
+        "slideIndex": "9",
+        "useContentHubImage": true,
+        "slideCaption": "The well-appointed kitchen features plenty of counter space to make meal prep a breeze.",
+        "slideTitle": "The well-appointed kitchen features plenty of counter space to make meal prep a breeze.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/29c385a1e2f04a0db430d74d8f430e68?v=8dd0621f",
+        "slideIndex": "10",
+        "useContentHubImage": true,
+        "slideCaption": "The well-appointed kitchen features plenty of counter space to make meal prep a breeze.",
+        "slideTitle": "The well-appointed kitchen features plenty of counter space to make meal prep a breeze.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/3fe1c9d76c3a454bbcd89ad376106a44?v=ce128bd1",
+        "slideIndex": "11",
+        "useContentHubImage": true,
+        "slideCaption": "The first floor primary suite is located off of the kitchen.",
+        "slideTitle": "The first floor primary suite is located off of the kitchen.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/8c6e994a023c447aa99a70f3c0cea5a2?v=ad2c8a52",
+        "slideIndex": "12",
+        "useContentHubImage": true,
+        "slideCaption": "The stunning open-concept floorplan allows for easy flow between the kitchen and dining areas.",
+        "slideTitle": "The stunning open-concept floorplan allows for easy flow between the kitchen and dining areas.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/8609f5a20de840d5abafe52e97f9469b?v=d465aa5e",
+        "slideIndex": "13",
+        "useContentHubImage": true,
+        "slideCaption": "The open dining area offers the perfect place for meals with family and friends. ",
+        "slideTitle": "The open dining area offers the perfect place for meals with family and friends. ",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/6ae6560e35eb4daaa53065b2bbbda639?v=30e43ce7",
+        "slideIndex": "14",
+        "useContentHubImage": true,
+        "slideCaption": "The open dining area offers the perfect place for meals with family and friends. ",
+        "slideTitle": "The open dining area offers the perfect place for meals with family and friends. ",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/107c4e4ab8f3457e9765097b5be51b20?v=795515b0",
+        "slideIndex": "15",
+        "useContentHubImage": true,
+        "slideCaption": "A private primary bedroom is accentuated with a tray ceiling.",
+        "slideTitle": "A private primary bedroom is accentuated with a tray ceiling.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/2a4a5a30140148c090917cd8ba5c996c?v=4752e419",
+        "slideIndex": "16",
+        "useContentHubImage": true,
+        "slideCaption": "Relax and recharge in the spacious, light-filled primary suite. ",
+        "slideTitle": "Relax and recharge in the spacious, light-filled primary suite. ",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/40aea3b970b1459e995007e655afaf5e?v=90c5700f",
+        "slideIndex": "17",
+        "useContentHubImage": true,
+        "slideCaption": "The primary suite leads to a well-appointed private bathroom.",
+        "slideTitle": "The primary suite leads to a well-appointed private bathroom.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/a1e5b489ff05499ba64ebc8707fb0397?v=84fb2119",
+        "slideIndex": "18",
+        "useContentHubImage": true,
+        "slideCaption": "The primary ensuite boasts duel sinks, tile shower and large walk-in closet.",
+        "slideTitle": "The primary ensuite boasts duel sinks, tile shower and large walk-in closet.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/901eeedfd4cf4359b422e47b15c0407c?v=3a40a699",
+        "slideIndex": "19",
+        "useContentHubImage": true,
+        "slideCaption": "The primary ensuite boasts duel sinks, tile shower and large walk-in closet.",
+        "slideTitle": "The primary ensuite boasts duel sinks, tile shower and large walk-in closet.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/9c0ffb3e55b442c3aed189096c79bcfe?v=ab3caa42",
+        "slideIndex": "20",
+        "useContentHubImage": true,
+        "slideCaption": "The walk-in closet off of the primary bathroom offers an abundance of space.",
+        "slideTitle": "The walk-in closet off of the primary bathroom offers an abundance of space.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/2e35215d83054f6eb52fe133b452bea0?v=3331aebe",
+        "slideIndex": "21",
+        "useContentHubImage": true,
+        "slideCaption": "Spacious secondary bedrooms offer plenty of room for the whole family and overnight guests.",
+        "slideTitle": "Spacious secondary bedrooms offer plenty of room for the whole family and overnight guests.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/33ce17c68aab40e791fd6427188fc02f?v=55b03b23",
+        "slideIndex": "22",
+        "useContentHubImage": true,
+        "slideCaption": "Spacious secondary bedrooms offer plenty of room for the whole family and overnight guests.",
+        "slideTitle": "Spacious secondary bedrooms offer plenty of room for the whole family and overnight guests.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/14f0e434820e4528bab2361ee4dd8e98?v=1062be27",
+        "slideIndex": "23",
+        "useContentHubImage": true,
+        "slideCaption": "A full bathroom is located next to the secondary bedrooms.",
+        "slideTitle": "A full bathroom is located next to the secondary bedrooms.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/17c11a98d6804d0eaed2db2382c44168?v=1f6c5b0c",
+        "slideIndex": "24",
+        "useContentHubImage": true,
+        "slideCaption": "A second floor loft provides a large space to relax and unwind.",
+        "slideTitle": "A second floor loft provides a large space to relax and unwind.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/2b43266674c8413188b4e6c429be0e5e?v=0347e520",
+        "slideIndex": "25",
+        "useContentHubImage": true,
+        "slideCaption": "A second floor loft provides a large space to relax and unwind.",
+        "slideTitle": "A second floor loft provides a large space to relax and unwind.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/34574a29939049ca92b8925bebb32a5b?v=5b958752",
+        "slideIndex": "26",
+        "useContentHubImage": true,
+        "slideCaption": "A private bedroom is located upstairs off of the loft.",
+        "slideTitle": "A private bedroom is located upstairs off of the loft.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/a85fb76441a6414b940bb32f657c90a8?v=baff1a08",
+        "slideIndex": "27",
+        "useContentHubImage": true,
+        "slideCaption": "A full bathroom is located upstairs next to the bedroom.",
+        "slideTitle": "A full bathroom is located upstairs next to the bedroom.",
+        "slideImage": ""
+      },
+      {
+        "contentHubImageUrl": "https://mhc-p-001.sitecorecontenthub.cloud/api/public/content/5514c36c27b54dd19a8a618221cf2d27?v=21a79957",
+        "slideIndex": "28",
+        "useContentHubImage": true,
+        "slideCaption": "A separate laundry room makes doing chores a breeze.",
+        "slideTitle": "A separate laundry room makes doing chores a breeze.",
+        "slideImage": ""
+      }
+    ],
+    "relatedFloorplans": [
+      {
+        "sfId": "a7Vcw0000009hH3EAI",
+        "name": "Carolina S462",
+        "ID": "{44B5EE57-0E23-C8EF-F122-25F345201DC2}",
+        "contentHubEntityIdentifier": "IkN4drqRRzaV7C_6vQiZQA",
+        "communitySheetSfId": "a1Ccw000000JeMjEAK"
+      }
+    ],
+    "isFeaturedGallery": false,
+    "galleryDescription": "\u003Cp\u003ECypress Ridge_QMI: 555 Cypress Preserve\u003C/p\u003E",
+    "galleryItemName": "COACypressRidgeCarolinaFresh555CypressPreserve",
+    "relatedMetroAreas": [
+      {
+        "sfId": "a1Icw00000088ejEAA",
+        "name": "Huntsville",
+        "contentHubEntityIdentifier": "sfwXqYIIQp-mXoRtoXuYXw"
+      }
+    ],
+    "sitecoreId": "10d191d2-d150-43a1-e31b-89556b9e9658",
+    "relatedCommunitySheets": []
+  }
+]

@@ -10,6 +10,7 @@
     using Stylelabs.M.Sdk.WebClient;
     using System.Globalization;
     using System.Linq;
+    using System.Text;
     using System.Threading.Tasks;
     using System.Threading.Tasks;
 
@@ -22,28 +23,51 @@
             _mClient = mClient;
         }
 
-        public async Task<ImportResult> ImportAsync(List<GalleryItem> items)
+        public async Task<List<ImportResult>> ImportAsync(List<GalleryItem> items)
         {
-           
-            ImportResult importResult = new ImportResult();
+
             var results = new List<ImportResult>();
 
             foreach (var item in items)
             {
-                
-                var getntity = await GetGalleryByTitleAsync(item.galleryTitle);
-                if (getntity != null)
+                ////create computed gallery title value
+                ImportResult importResult = new ImportResult();
+                StringBuilder computedGallerytitle = new StringBuilder();
+                computedGallerytitle.Append("Imported:");
+                if (item.relatedMetroAreas != null && item.relatedMetroAreas.Count() != 0)
                 {
-                    // Duplicate exists → skip import
-                    importResult.TotalCountDuplicate++;
-                    importResult.DuplicateData.Add(new ImportResultProperty() { Message = "", Status = "Duplicatedata", SitecoreId = item.sitecoreId, Name = item.galleryTitle });
+                    computedGallerytitle.Append(item.relatedMetroAreas[0].name);
+                    computedGallerytitle.Append(" ");
+                }
+                if (item.relatedCommunitySheets != null && item.relatedCommunitySheets.Count() != 0)
+                {
+                    computedGallerytitle.Append(item.relatedCommunitySheets[0].name);
+                    computedGallerytitle.Append(" ");
+                }
+                if (item.relatedFloorplans != null && item.relatedFloorplans.Count() != 0)
+                {
+                    computedGallerytitle.Append(item.relatedFloorplans[0].name);
+                    computedGallerytitle.Append(" ");
+                }
+                if (item.relatedLots != null && item.relatedLots.Count() != 0)
+                {
+                    computedGallerytitle.Append(item.relatedLots[0].name);
+                }
 
+                ////checking duplicate entity
+                var getEntity = await GetGalleryByTitleAsync(computedGallerytitle.ToString());
+                if (getEntity != null)
+                {
+                    // Duplicate entity     
+                    importResult.migrationResults.status = "Duplicate";
+                    importResult.migrationResults.message = "Duplicate item is trying to import";
                     break;
                 }
                 else
                 {
+                    // New entity created
                     var entity = await _mClient.EntityFactory.CreateAsync("MH.AssetGallery");
-                    entity.SetPropertyValue("Title", item.galleryTitle);
+                    entity.SetPropertyValue("Title", computedGallerytitle.ToString());
                     entity.SetPropertyValue("Description", item.galleryDescription);
                     foreach (var relatedmetroarea in item.relatedMetroAreas)
                     {
@@ -125,15 +149,27 @@
                         }
                     }
                     var savedEntity = await _mClient.Entities.SaveAsync(entity);
-                    // New entity created
-                    importResult.TotalCountPass++;
-                    importResult.PassData.Add(new ImportResultProperty() { Message = "", Status = "Duplicatedata", SitecoreId = item.sitecoreId, Name = item.galleryTitle });
-                    break;
+                    
+                    importResult.migrationResults.status = "Pass";
+                    importResult.migrationResults.message = "Entity created successfully!";
+                   
                 }
-               
+                //Assign back to export object to export json
+                importResult.relatedLots = item.relatedLots;    
+                importResult.isPublished = item.isPublished;    
+                importResult.galleryTitle = item.galleryTitle;    
+                importResult.slides = item.slides;    
+                importResult.relatedFloorplans = item.relatedFloorplans;    
+                importResult.isFeaturedGallery = item.isFeaturedGallery;    
+                importResult.galleryDescription = item.galleryDescription;    
+                importResult.galleryItemName = item.galleryItemName;    
+                importResult.relatedMetroAreas = item.relatedMetroAreas;    
+                importResult.sitecoreId = item.sitecoreId;    
+                importResult.relatedCommunitySheets = item.relatedCommunitySheets;    
+                results.Add(importResult);
+                break;
             }
-
-            return importResult;
+            return results;
         }
 
         private async Task<string?> GetEntityForUrl(string contentHubImageUrl)
@@ -166,7 +202,6 @@
         private async Task<IEntity> GetGalleryByTitleAsync(string title)
         {
             // Create a filter: DefinitionName = MH.AssetGallery AND Title = {title}
-            // LINQ-based query
             var query = Query.CreateQuery(entities =>
    from e in entities
    where e.Property("Title") == title

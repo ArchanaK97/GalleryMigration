@@ -1,21 +1,14 @@
 ﻿namespace GalleryImporter.Models
 {
-    public class ImportResult
+    public class ImportResult : GalleryItem
     {
-        public int TotalCountPass { get; set; } = 0;
-        public int TotalCountFail { get; set; } = 0;
-        public int TotalCountDuplicate { get; set; } = 0;
-        public List<ImportResultProperty> PassData { get; set; } = new List<ImportResultProperty>();
-        public List<ImportResultProperty> FailData { get; set; } = new List<ImportResultProperty>();
-        public List<ImportResultProperty> DuplicateData { get; set; } = new List<ImportResultProperty>();
+       public MigrationResults migrationResults {  get; set; } = new MigrationResults();
 
     }
-    public class ImportResultProperty
+    public class MigrationResults
     {
-       public string SitecoreId { get; set; } = String.Empty;
-        public string Name { get; set; } = String.Empty;
-        public string Status { get; set; } = String.Empty; // Created, Failed, Duplicate, Simulated
-        public string Message { get; set; } = String.Empty;
+        public string status { get; set; } = String.Empty; // Created, Failed, Duplicate, Simulated
+        public string message { get; set; } = String.Empty;
        
 
     }
