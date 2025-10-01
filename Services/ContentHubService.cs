@@ -5,6 +5,7 @@
     using Stylelabs.M.Framework.Essentials.LoadOptions;
     using Stylelabs.M.Sdk.Contracts.Base;
     using Stylelabs.M.Sdk.WebClient;
+    using System.Threading.Tasks;
 
     public class ContentHubService
     {
@@ -71,27 +72,70 @@
                         galleriesToCommunitySheets.Add(communitySheet.Id.Value);
                     }
                 }
-                //foreach (var sliedItem in item.slides)
-                //{
-                //    var slide = await _mClient.Entities.GetAsync(sliedItem.slideTitle, new EntityLoadConfiguration
-                //    {
-                //        RelationLoadOption = RelationLoadOption.All
-                //    });
-                //    var assetGalleriesToAssetGallerySlides = entity.GetRelation<IParentToManyChildrenRelation>("AssetGalleriesToAssetGallerySlides");
-                //    if (slide?.Id != null)
-                //    {
-                //        assetGalleriesToAssetGallerySlides.Add(slide.Id.Value);
-                //    }
-                //}
+                foreach (var slideItem in item.slides)
+                {
+                    long? assetReference = null;
+                    if (slideItem.useContentHubImage)
+                    {
+                        var entityId = await GetEntityForUrl(slideItem.contentHubImageUrl);
+                        if (!string.IsNullOrEmpty(entityId))
+                        {
+                            assetReference = long.Parse(entityId)-1; //I added the subtract one because I noticed with the asset I was testing with, the actual id was 1 less than the id emitted by the header value
+                        }
+                    }
+                    else
+                    {
+                        //TODO: Handle the case where the image is not a Content Hub Asset and needs to be imported and then referenced
+                    }
+
+                    if (assetReference != null)
+                    {
+                        var slide = await _mClient.EntityFactory.CreateAsync("MH.AssetGallerySlide");
+                        slide.SetPropertyValue("Caption", slideItem.slideTitle);
+                        slide.SetPropertyValue("Description", slideItem.slideCaption);
+                        
+                        var assetToGallerySlides = slide.GetRelation<IChildToOneParentRelation>("AssetToGallerySlides");
+                        assetToGallerySlides.SetId(assetReference.Value);
+
+                        var savedSlide = await _mClient.Entities.SaveAsync(slide);
+
+                        var assetGalleriesToAssetGallerySlides = entity.GetRelation<IParentToManyChildrenRelation>("AssetGalleriesToAssetGallerySlides");
+                        assetGalleriesToAssetGallerySlides.Add(savedSlide);
+                    }
+                }
                 var savedEntity = await _mClient.Entities.SaveAsync(entity);
                 break;
-
             }
-
-
 
             return results;
         }
 
+        private async Task<string?> GetEntityForUrl(string contentHubImageUrl)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    var response = await client.GetAsync(contentHubImageUrl);
+
+                    response.EnsureSuccessStatusCode();
+
+                    if (response.Headers.TryGetValues("Entity", out var entityValues))
+                    {
+                        return entityValues?.ToList()[0];
+                    }
+                    else
+                    {
+                        //TODO: Log missing Entity Header
+                    }
+                }
+                catch (Exception ex)
+                {
+                    //TODO:  Log exception
+                }
+            }
+
+            return null;
+        }
     }
 }
