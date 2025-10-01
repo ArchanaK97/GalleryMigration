@@ -1,5 +1,8 @@
 ﻿namespace GalleryImporter.Models
 {
+    using Remotion.Linq.Utilities;
+    using System.Text;
+
     public class GalleryItem
     {
         public List<Relatedlot> relatedLots { get; set; } = new List<Relatedlot>();
@@ -13,6 +16,49 @@
         public List<Relatedmetroarea> relatedMetroAreas { get; set; } = new List<Relatedmetroarea>();
         public string sitecoreId { get; set; } = String.Empty;
         public List<Relatedcommunitysheet> relatedCommunitySheets { get; set; } = new List<Relatedcommunitysheet>();
+
+        public string ComputedTitle
+        {
+            get
+            {
+                StringBuilder computedGallerytitle = new StringBuilder();
+                computedGallerytitle.Append("Imported: ");
+
+                bool hasIdentifier = false;
+                if (relatedMetroAreas != null && relatedMetroAreas.Count() != 0)
+                {
+                    computedGallerytitle.Append(relatedMetroAreas[0].name);
+                    computedGallerytitle.Append(" ");
+                    hasIdentifier = true;
+                }
+                if (relatedCommunitySheets != null && relatedCommunitySheets.Count() != 0)
+                {
+                    computedGallerytitle.Append(relatedCommunitySheets[0].name);
+                    computedGallerytitle.Append(" ");
+                    hasIdentifier = true;
+                }
+                if (relatedFloorplans != null && relatedFloorplans.Count() != 0)
+                {
+                    computedGallerytitle.Append(relatedFloorplans[0].name);
+                    computedGallerytitle.Append(" ");
+                    hasIdentifier = true;
+                }
+                if (relatedLots != null && relatedLots.Count() != 0)
+                {
+                    computedGallerytitle.Append(relatedLots[0].name);
+                    hasIdentifier = true;
+                }
+
+                if (!hasIdentifier)
+                {
+                    computedGallerytitle.Append(galleryItemName);
+                }
+
+                return computedGallerytitle.ToString();
+            }
+        }
+
+        public MigrationResults migrationResults { get; set; } = new MigrationResults();
     }
     public class Relatedlot
     {
